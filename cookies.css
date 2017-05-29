@@ -1,0 +1,143 @@
+.header{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:80px;
+    background-color:red;
+}
+.h2{
+    position:absolute;
+    top:20px;
+    left:30px;
+    font-family:Segoe Script;
+    color:blue;
+    font-size: 20px; 
+}
+.footer{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:80px;
+    background-color:red;
+}
+.footer button{
+    background-color:yellow;
+    color:black;
+    font-family:Veranda;
+    position:absolute;
+    bottom:40px;
+    width:70px;
+
+}
+#myScale{
+    left:40px;
+}
+#createTask{
+    left:500px;
+}
+.options{
+    left:960px;
+
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.modalCreateTask {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-contentCreateTask {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.closeCreateTask {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.inputCreateTaskPoints{
+    left:500px;
+}
+.createTaskButton{
+    position:absolute;
+    top:550px;
+    bottom:300px;
+}
+.mainList{
+    position:absolute;
+    top:150px;
+    
+}

@@ -1,0 +1,146 @@
+<htnl>
+    <head>
+        <link rel="stylesheet" href="cookies.css">
+        </head>
+        <body>
+            <div class="header" >
+                <h2 class="h2">Romamchur</h2>
+            </div>
+            <ol class="mainList" id="mainList">
+                <li>Hello!</li>
+            </ol>
+            <div class="footer">
+                
+                <!-- Trigger/Open The Modal -->
+<button id="myScale">MyScale</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>You have:</p>
+    <p id="demo"></p>
+    <script>
+    var x=0;
+    document.getElementById("demo").innerHTML=x+" "+ "points"
+    </script>
+    
+  </div>
+
+</div>
+<script>
+                // Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myScale");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+//nUMBER 2 
+                </script>
+<button id="createTask">Create Task</button>
+
+<!-- The Modal -->
+<div id="modalCreateTask" class="modalCreateTask">
+
+  <!-- Modal content -->
+  <div class="modal-contentCreateTask">
+    <span class="closeCreateTask">&times;</span>
+    <input type="text" class="inputCreateTaskName" id="inputCreateTaskName" placeholder="Write name of your task" required autofocus>
+    <input type="number" class="inputCreateTaskPoints" id="inputCreateTaskPoints" placeholder="How much points you want get over this task?" required>
+    <button class="createTaskButton" id="createTaskButton"  onclick="makeUl()">CreateTask</button>
+    <script>
+        function makeUl(){    
+        var nameOfTask=document.getElementById("inputCreateTaskName").value;
+        var points=document.getElementById("inputCreateTaskPoints").value;
+        var myLi = document.createElement("li");
+        myLi.innerHTML=nameOfTask + "                 " + points+"points" ;
+        myLi.style.margin="35px";
+        mainList.appendChild(myLi);
+        var removeButton = document.createElement("button");
+        myLi.appendChild(removeButton);
+        removeButton.style.background="red";
+        removeButton.innerHTML="Remove task";
+        removeButton.style.position="absolute";
+        removeButton.style.top=myLi.style.top;
+        removeButton.style.width="70px";
+        removeButton.style.height="30px";
+        removeButton.onclick="removeButton()";
+        var completeButton=document.createElement("button");
+        myLi.appendChild(completeButton);
+        completeButton.style.background="red";
+        completeButton.innerHTML="I completed the task";
+        completeButton.style.position="absolute";
+        completeButton.style.top=myLi.style.top;
+        completeButton.style.width="70px";
+        completeButton.style.height="30px";
+        completeButton.style.left="250px";
+        completeButton.onclick="completeButton()"
+        var failedButton=document.createElement("button");
+        myLi.appendChild(failedButton);
+        failedButton.style.background="red";
+        failedButton.innerHTML="I failed the task"
+        failedButton.style.position="absolute";
+        failedButton.style.top=myLi.style.top;
+        failedButton.style.width="70px";
+        failedButton.style.height="35px";
+        failedButton.style.left="350px";
+        failedButton.onclick="failedButton()";
+        modalCreateTask.style.display = "none";
+
+        function failedButton(){
+            mainlist.removeChild(myLi);     
+        }
+        }
+        </script>
+  </div>
+  <script>
+                // Get the modal
+var modalCreateTask = document.getElementById('modalCreateTask');
+
+// Get the button that opens the modal
+var btnCreateTask = document.getElementById("createTask");
+
+// Get the <span> element that closes the modal
+var spanCreateTask = document.getElementsByClassName("closeCreateTask")[0];
+
+// When the user clicks on the button, open the modal 
+btnCreateTask.onclick = function() {
+    modalCreateTask.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+spanCreateTask.onclick = function() {
+    modalCreateTask.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modalCreateTask.style.display = "none";
+    }
+}
+                </script>
+
+</body>
+</html>  
